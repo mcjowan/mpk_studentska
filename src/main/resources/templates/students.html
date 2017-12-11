@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Spring Framework</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+    <div th:if="${not #lists.isEmpty(students)}">
+        <h2>Lista Studenata</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Zvanje</th>
+                <th>Prezime</th>
+                <th>Ime</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr th:each="student : ${students}">
+                <td th:text="${student.id}"><a href="/student/${student.id}">Id</a></td>
+                <td th:text="${student.zvanje}">zvanje</td>
+                <td th:text="${student.prezime}">prezime</td>
+                <td th:text="${student.ime}">ime</td>
+                <td><a th:href="${'/student/' + student.id}">View</a></td>
+                <td><a th:href="${'/student/edit/' + student.id}">Edit</a></td>
+                <td><a th:href="${'/student/delete/' + student.id}">Delete</a></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
