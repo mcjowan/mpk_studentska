@@ -1,0 +1,9 @@
+
+  ${AnsiColor.BLUE}██    ██ ${AnsiColor.RED} ███████ ${AnsiColor.BLUE} ██   ███ 
+  ${AnsiColor.BLUE}███  ███ ${AnsiColor.RED} ██   ██ ${AnsiColor.BLUE} ██ ███ 
+  ${AnsiColor.BLUE}██ ██ ██ ${AnsiColor.RED} ███████ ${AnsiColor.BLUE} █████ 
+  ${AnsiColor.BLUE}██    ██ ${AnsiColor.RED} ██      ${AnsiColor.BLUE} ██ ███ 
+  ${AnsiColor.BLUE}██    ██ ${AnsiColor.RED} ██      ${AnsiColor.BLUE} ██   ███   
+
+${AnsiColor.BRIGHT_BLUE}:: MPK 🤓  & McJ mod  :: Running Spring Boot ${spring-boot.version} ::
+${AnsiColor.DEFAULT}

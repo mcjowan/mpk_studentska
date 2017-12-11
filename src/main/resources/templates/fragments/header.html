@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+
+<div class="container">
+    <div th:fragment="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/students}">Studenti</a></li>
+                        <li><a href="#" th:href="@{/student/new}">Unos studenata</a></li>
+                        <li><a href="#" th:href="@{/predmeti}">Predmeti</a></li>
+                        <li><a href="#" th:href="@{/predmet/new}">Unos predmeta</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="">
+                    <h2>Spring Framework Studentska služba</h2>
+
+                    <h3>Spring Boot Web App</h3>
+                    
+                    <h4>Zadaci</h4>
+                    <h5>Dodati Predmet - zadatak od početka</h5>
+                    <h5>Proširiti Student sa mail poljem - polje postoji u bazi</h5>
+                    <h5>Proširiti Student sa predefinisanim poljima za zvanje - tabela u bazi, kombo za izbor na formi</h5>
+                </div>
+            </div>
+            <div class="row text-center">
+                <img src="../../static/images/logo.png" width="200"
+                     th:src="@{/images/logo.png}"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
